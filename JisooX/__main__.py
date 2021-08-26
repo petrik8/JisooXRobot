@@ -53,8 +53,8 @@ HELP_STRINGS = """
  • /help <module>: PM's you info about that module
  • /settings in PM: will send you your settings for all supported modules
  • /settings in a group: will redirect you to pm, with all that chat's settings
-{}
-And the following:
+
+⚠️ {} music service and group manager:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nfeel free to add to your groups!\n")
 
 
