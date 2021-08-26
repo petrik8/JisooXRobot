@@ -187,8 +187,7 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="➕ Add to groups",url="t.me/{}?startgroup=true".format(bot.username)),InlineKeyboardButton(text="Help & Commands",callback_data="help_back")]]
-    keyboard += [[InlineKeyboardButton(text="Owner of bot",url="https://t.me/eleaxzeno)]]
+    keyboard = [[InlineKeyboardButton(text="Help & Commands",callback_data="help_back"),InlineKeyboardButton(text="[► Add Me ◄]",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
