@@ -34,7 +34,7 @@ My name is *{}*, a powerful telegram bot to music service and manage your groups
 
 HELP_STRINGS = """
 𝘼𝙑𝘼𝙄𝙇𝘼𝘽𝙇𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎
-(all commands can either be used with / or !)
+(all commands can either be used with "/")
 
 💠 𝙛𝙤𝙧 𝙢𝙪𝙨𝙞𝙘 𝙨𝙚𝙧𝙫𝙞𝙘𝙚
  • /play (title): play song from youtube
@@ -47,6 +47,7 @@ HELP_STRINGS = """
  • /pause: pause the music
  • /resume: resume the music
  • /end: stop music streaming
+ • /s (title/url): download song
 
 💠 𝙛𝙤𝙧 𝙢𝙖𝙣𝙖𝙜𝙚 𝙜𝙧𝙤𝙪𝙥𝙨
  • /help: PM's you this message
