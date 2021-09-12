@@ -139,7 +139,7 @@ def new_member(bot: Bot, update: Update):
         for new_mem in new_members:
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
-                update.effective_message.reply_text("Oh🤴Genos,My Owner has just joined your group.")
+                update.effective_message.reply_text("👨🏻‍💻 oh.. My owner has just joined your group.")
                 continue
             
             # Welcome Devs
@@ -148,7 +148,7 @@ def new_member(bot: Bot, update: Update):
                 
             # Welcome Sudos
             elif new_mem.id in SUDO_USERS:
-                update.effective_message.reply_text("Huh! A Sudo User just joined! Stay Alert!")
+                update.effective_message.reply_text("My assistant just joined!")
 
             # Welcome Support
             elif new_mem.id in SUPPORT_USERS:
@@ -159,15 +159,15 @@ def new_member(bot: Bot, update: Update):
                 update.effective_message.reply_text("Oof! A Whitelist User just joined!")
                
             elif new_mem.id == 1118936839:
-                update.effective_message.reply_text("Oh🤴Genos,My Creator/Developer has just joined your group.")
+                update.effective_message.reply_text("🤴 oh.. My Creator/Developer has just joined your group.")
 
             # Make bot greet admins
             elif new_mem.id == bot.id:
-                update.effective_message.reply_text("Hey {}, I'm {}! Thank you for adding me to {}" 
+                update.effective_message.reply_text("Hey {}, thank you for adding me to {}" 
                 " and be sure to check /help in PM for more commands and tricks!".format(user.first_name, bot.first_name, chat_name))
                 bot.send_message(
                     MESSAGE_DUMP,
-                    "I have been added to {} with \nID: <pre>{}</pre>".format(
+                    "Bot dimasukkan ke {}.\nID: <pre>{}</pre>".format(
                         chat.title, chat.id),
                     parse_mode=ParseMode.HTML)
             else:
