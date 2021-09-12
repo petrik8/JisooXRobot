@@ -39,7 +39,7 @@ HELP_STRINGS = """
 💠 𝙛𝙤𝙧 𝙢𝙪𝙨𝙞𝙘 𝙨𝙚𝙧𝙫𝙞𝙘𝙚
  • /play (title): play song from youtube
  • /search (title): search url from youtube
- • /lyric (title): find the lyrics of the song
+ • /lirik (title): find the lyrics of the song
  • /playlist: show the list song in queue
  • /userbotjoin: invite assistant bot
  • /reload: refresh the admin list
